@@ -11,7 +11,7 @@ $validator =new RIBvalidator($banque,$agence,$compte,$cle);//instanciation
 
 if ($validator->isValid()){
     header('Location: index.php?succes');
-    
+    exit;
 } else {
     header('Location: index.php?error');
     echo"no";
